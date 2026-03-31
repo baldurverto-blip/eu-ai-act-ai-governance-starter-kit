@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EU AI Act AI Governance Starter Kit | Downloadable AI Governance Templates for EU Teams</title>
+  <meta name="description" content="Buy a downloadable AI governance starter kit for EU teams already using AI. Includes a policy template, use-case register, review SOP, incident log, vendor checklist, and manual fulfillment path while checkout is being finalized.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="EU AI Act AI Governance Starter Kit">
+  <meta property="og:description" content="A one-time downloadable toolkit with nine editable AI governance templates for EU teams already using AI in everyday business operations.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Verto Studios">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EU AI Act AI Governance Starter Kit">
+  <meta name="twitter:description" content="Nine editable AI governance templates for EU teams. Buy now via placeholder CTA or manual fulfillment while live checkout is being finalized.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root {
+      --bg: #efe6d6;
+      --bg-deep: #dccdb7;
+      --panel: rgba(29, 28, 27, 0.88);
+      --panel-soft: rgba(52, 48, 42, 0.78);
+      --paper: rgba(255, 250, 242, 0.84);
+      --paper-strong: #fff9f1;
+      --ink: #171513;
+      --ink-soft: #4a443c;
+      --line: rgba(23, 21, 19, 0.12);
+      --line-strong: rgba(23, 21, 19, 0.22);
+      --signal: #c45d2f;
+      --signal-deep: #8f3f1f;
+      --signal-soft: #f6e1d4;
+      --moss: #31473f;
+      --moss-soft: #dde8e1;
+      --gold: #b9923f;
+      --shadow: 0 30px 80px rgba(38, 28, 17, 0.12);
+      --radius-xl: 34px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(255,255,255,0.75), transparent 26%),
+        radial-gradient(circle at 85% 12%, rgba(196, 93, 47, 0.12), transparent 24%),
+        linear-gradient(180deg, #f6efe3 0%, var(--bg) 50%, #f3ebdf 100%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+    p { margin: 0; color: var(--ink-soft); }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      color: var(--ink);
+      font-family: Iowan Old Style, Palatino Linotype, Book Antiqua, Georgia, serif;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 0.98;
+    }
+
+    h1 { font-size: clamp(3.2rem, 6.8vw, 6.2rem); max-width: 11ch; }
+    h2 { font-size: clamp(2.2rem, 4.5vw, 4rem); max-width: 12ch; }
+    h3 { font-size: 1.35rem; }
+    h4 { font-size: 1rem; letter-spacing: -0.02em; }
+
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section { padding: 96px 0; }
+    .section-tight { padding: 74px 0; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(196, 93, 47, 0.22);
+      background: rgba(255, 249, 241, 0.72);
+      color: var(--signal);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: currentColor;
+    }
+
+    .lead {
+      font-size: 1.16rem;
+      max-width: 42rem;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(246, 238, 226, 0.86);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(23, 21, 19, 0.08);
+    }
+
+    .topbar .container {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .brand span { color: var(--signal); }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 20px;
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      position: relative;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 54px 0 80px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 30px 0 auto 54%;
+      width: 760px;
+      height: 760px;
+      transform: translateX(-10%);
+      background: radial-gradient(circle, rgba(49, 71, 63, 0.14), transparent 62%);
+      filter: blur(6px);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .hero-copy .eyebrow { margin-bottom: 24px; }
+    .hero-copy .lead { margin: 24px 0 30px; }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 54px;
+      padding: 0 24px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .button:hover { transform: translateY(-1px); }
+
+    .button-primary {
+      background: linear-gradient(135deg, var(--signal) 0%, var(--signal-deep) 100%);
+      color: #fff8f2;
+      box-shadow: 0 18px 34px rgba(143, 63, 31, 0.22);
+    }
+
+    .button-secondary {
+      background: rgba(255, 249, 241, 0.74);
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    .hero-note {
+      max-width: 46rem;
+      font-size: 0.95rem;
+    }
+
+    .meta-list,
+    .fit-list,
+    .include-list,
+    .faq-list,
+    .lane-list,
+    .step-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .meta-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .meta-list li {
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.46);
+      color: var(--ink);
+      font-size: 0.92rem;
+    }
+
+    .card,
+    .paper,
+    .vault {
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+    }
+
+    .paper {
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background: var(--paper);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-panel {
+      padding: 30px;
+      color: #f9f3ea;
+      background:
+        linear-gradient(180deg, rgba(37, 35, 32, 0.96) 0%, rgba(24, 23, 21, 0.96) 100%);
+      border: 1px solid rgba(255,255,255,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-panel::before {
+      content: "";
+      position: absolute;
+      inset: auto -40px -60px auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(196, 93, 47, 0.26), transparent 66%);
+      pointer-events: none;
+    }
+
+    .panel-label {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: #f1dccf;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .hero-panel h3 {
+      color: #fff8f2;
+      margin-bottom: 16px;
+    }
+
+    .hero-panel p {
+      color: rgba(249, 243, 234, 0.78);
+    }
+
+    .checkpoint,
+    .step-list,
+    .faq-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .checkpoint-item,
+    .step-item {
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .checkpoint-item strong,
+    .step-item strong {
+      display: block;
+      color: inherit;
+      margin-bottom: 2px;
+    }
+
+    .section-head {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 32px;
+      max-width: 48rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .problem-card,
+    .fit-card,
+    .price-card,
+    .faq-card,
+    .lane-card {
+      padding: 28px;
+    }
+
+    .problem-card {
+      border: 1px solid rgba(196, 93, 47, 0.14);
+      background: linear-gradient(180deg, rgba(255, 250, 242, 0.95) 0%, rgba(248, 237, 226, 0.84) 100%);
+    }
+
+    .fit-card {
+      border: 1px solid rgba(49, 71, 63, 0.12);
+      background: linear-gradient(180deg, rgba(223, 232, 225, 0.92) 0%, rgba(242, 247, 243, 0.92) 100%);
+    }
+
+    .fit-list,
+    .lane-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .fit-list li,
+    .lane-list li {
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .fit-list li::before,
+    .lane-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--signal);
+    }
+
+    .vault {
+      padding: 34px;
+      border: 1px solid rgba(23, 21, 19, 0.08);
+      background:
+        linear-gradient(180deg, rgba(255, 252, 247, 0.98) 0%, rgba(245, 236, 225, 0.96) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vault::before {
+      content: "";
+      position: absolute;
+      inset: -80px auto auto 70%;
+      width: 280px;
+      height: 280px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(185, 146, 63, 0.17), transparent 70%);
+      pointer-events: none;
+    }
+
+    .include-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .include-list li {
+      min-height: 148px;
+      padding: 20px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid rgba(23, 21, 19, 0.08);
+    }
+
+    .file-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: rgba(23, 21, 19, 0.08);
+      color: var(--ink);
+      font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+      font-size: 0.74rem;
+      margin-bottom: 12px;
+    }
+
+    .include-list p { font-size: 0.95rem; }
+
+    .price-card {
+      color: #f9f4ed;
+      background: linear-gradient(160deg, #2e2a25 0%, #171513 100%);
+      border: 1px solid rgba(255,255,255,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .price-card::before {
+      content: "";
+      position: absolute;
+      inset: auto auto -60px -30px;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(196, 93, 47, 0.30), transparent 68%);
+      pointer-events: none;
+    }
+
+    .price-kicker {
+      color: rgba(249, 244, 237, 0.68);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.76rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: clamp(3rem, 6vw, 4.8rem);
+      line-height: 0.9;
+      color: #fff8f1;
+      margin: 6px 0 10px;
+    }
+
+    .price small {
+      display: block;
+      font-size: 0.92rem;
+      color: rgba(249, 244, 237, 0.7);
+      letter-spacing: normal;
+      margin-top: 8px;
+    }
+
+    .lane-list strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .faq-card {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.54);
+    }
+
+    .faq-card strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .disclaimer-band {
+      padding: 22px 26px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(196, 93, 47, 0.14);
+      background: rgba(255, 246, 238, 0.82);
+    }
+
+    .checkout-band {
+      padding: 28px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(49, 71, 63, 0.14);
+      background: rgba(223, 232, 225, 0.78);
+    }
+
+    .micro-note {
+      font-size: 0.92rem;
+    }
+
+    footer {
+      padding: 28px 0 54px;
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      border-top: 1px solid rgba(23, 21, 19, 0.08);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-2,
+      .include-list,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1, h2 { max-width: none; }
+    }
+
+    @media (max-width: 720px) {
+      .container { width: min(100% - 28px, 1160px); }
+      .section { padding: 76px 0; }
+      .hero { padding: 34px 0 64px; }
+      .topbar .container {
+        padding: 12px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .nav-links {
+        gap: 14px;
+        font-size: 0.9rem;
+      }
+      .hero-panel,
+      .vault,
+      .problem-card,
+      .fit-card,
+      .price-card,
+      .faq-card,
+      .lane-card,
+      .checkout-band {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="#top">Verto <span>Compliance Toolkit</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#included">Included Files</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#checkout">How To Buy</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">Downloadable Toolkit</div>
+            <h1>Buy the first AI governance pack your team can actually use this week.</h1>
+            <p class="lead">
+              The EU AI Act AI Governance Starter Kit gives EU teams nine editable templates to document everyday AI use,
+              assign ownership, and stop governance from being handled informally.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="mailto:vertosupport@agentmail.to?subject=Buy%20EU%20AI%20Act%20Toolkit&body=Hi,%20I%20want%20to%20buy%20the%20EU%20AI%20Act%20AI%20Governance%20Starter%20Kit%20for%20EUR%20149.%20Please%20send%20payment%20instructions.">Buy the starter kit - EUR 149</a>
+              <a class="button button-secondary" href="#included">See every file inside</a>
+            </div>
+            <p class="hero-note">
+              Built for teams already using AI in normal business work. Self-serve by design. If live checkout is not active yet,
+              purchase is handled manually by email and fulfilled within 24 hours on business days.
+            </p>
+            <ul class="meta-list" aria-label="Offer details">
+              <li>EU teams, 5-100 people</li>
+              <li>One-time price: EUR 149</li>
+              <li>Nine editable templates</li>
+              <li>Manual fulfillment path in place</li>
+            </ul>
+          </div>
+
+          <aside class="hero-panel card">
+            <div class="panel-label">What the buyer gets</div>
+            <h3>Nine working files. One credible first governance layer.</h3>
+            <p>
+              This is for companies where AI use is already spreading across drafting, support, research, and internal workflows,
+              but the team still lacks a policy, register, review path, and basic documentation trail.
+            </p>
+            <div class="checkpoint">
+              <div class="checkpoint-item">
+                <strong>Policy baseline</strong>
+                Internal rules for approved use, confidentiality boundaries, review expectations, and escalation triggers.
+              </div>
+              <div class="checkpoint-item">
+                <strong>Paper trail</strong>
+                Use-case register, incident log, vendor review, and training acknowledgment templates.
+              </div>
+              <div class="checkpoint-item">
+                <strong>Next-step ready</strong>
+                A clean starting point for later legal review, gap assessment, or implementation support.
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container grid-2">
+        <div class="problem-card paper">
+          <h3>The problem</h3>
+          <p style="margin-top:14px;">
+            Many small teams already use AI for drafting, support, research, and internal ops, but nothing important is documented.
+            No shared policy. No owner. No register. No review SOP. No incident trail.
+          </p>
+        </div>
+        <div class="fit-card paper">
+          <h3>Who this is for</h3>
+          <ul class="fit-list" style="margin-top:16px;">
+            <li>EU SaaS companies, agencies, consultancies, and service businesses.</li>
+            <li>Teams using ChatGPT, Claude, Copilot, Gemini, Notion AI, or embedded AI features.</li>
+            <li>Founders, ops leads, product leads, security owners, or compliance owners carrying this work part-time.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="included">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Included Files</div>
+          <h2>The toolkit is a concrete documentation pack, not a vague compliance claim.</h2>
+          <p class="lead">
+            Every file is editable and intended to be useful on day one. No filler deck. No fake platform. No consulting hidden inside the offer.
+          </p>
+        </div>
+
+        <div class="vault">
+          <ul class="include-list">
+            <li>
+              <div class="file-tag">00-start-here.md</div>
+              <h4>Setup guide</h4>
+              <p>A 60-minute first-pass walkthrough with ownership suggestions and rollout order.</p>
+            </li>
+            <li>
+              <div class="file-tag">01-ai-use-policy-template.docx</div>
+              <h4>Internal AI use policy</h4>
+              <p>Approved use, prohibited behavior, confidentiality boundaries, review expectations, and escalation rules.</p>
+            </li>
+            <li>
+              <div class="file-tag">02-ai-use-case-register.xlsx</div>
+              <h4>Use-case register</h4>
+              <p>Inventory for tools, owners, business purpose, data categories, review dates, and current controls.</p>
+            </li>
+            <li>
+              <div class="file-tag">03-ai-risk-triage-checklist.md</div>
+              <h4>Risk triage checklist</h4>
+              <p>A fast screen to separate ordinary business use from use cases that need deeper review.</p>
+            </li>
+            <li>
+              <div class="file-tag">04-human-review-sop.md</div>
+              <h4>Human review SOP</h4>
+              <p>A standard review workflow for AI-assisted output before it reaches customers or important decisions.</p>
+            </li>
+            <li>
+              <div class="file-tag">05-incident-log-template.xlsx</div>
+              <h4>Incident log</h4>
+              <p>Record hallucinations, misuse, data exposure concerns, policy breaches, and remediation actions.</p>
+            </li>
+            <li>
+              <div class="file-tag">06-vendor-due-diligence-checklist.md</div>
+              <h4>Vendor checklist</h4>
+              <p>Lightweight external provider review for model vendors, AI tools, and embedded assistants.</p>
+            </li>
+            <li>
+              <div class="file-tag">07-training-attestation-template.docx</div>
+              <h4>Training acknowledgment</h4>
+              <p>Simple sign-off confirming staff reviewed the policy and understand their responsibilities.</p>
+            </li>
+            <li>
+              <div class="file-tag">08-management-brief-template.md</div>
+              <h4>Management brief</h4>
+              <p>One-page internal summary of what exists, what is missing, and what leadership should do next.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container grid-2">
+        <div class="lane-card paper">
+          <h3>What this is and is not</h3>
+          <ul class="lane-list" style="margin-top:18px;">
+            <li>
+              <strong>Good fit</strong>
+              Internal copilots, drafting tools, support assistance, research help, summarization, and normal business workflows.
+            </li>
+            <li>
+              <strong>Not the right fit</strong>
+              High-risk, prohibited, safety-critical, medical, biometric, law-enforcement, or employment-scoring use cases.
+            </li>
+            <li>
+              <strong>Why this stays credible</strong>
+              The offer helps teams start documenting and governing everyday AI use. It does not pretend to cover every legal or technical edge case.
+            </li>
+          </ul>
+        </div>
+
+        <div class="disclaimer-band">
+          <h3>Plain-language disclaimer</h3>
+          <p style="margin-top:14px;">
+            This toolkit is an operational starting point. It does not make a company compliant with the EU AI Act by itself,
+            and it does not replace legal, security, or technical review where those are required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container grid-2">
+        <div class="price-card card">
+          <div class="price-kicker">One-time purchase</div>
+          <div class="price">EUR 149<small>downloadable toolkit</small></div>
+          <p>
+            Nine editable templates. No subscription. No calls included. Fixed-scope purchase for teams that need a practical baseline, not a consulting process.
+          </p>
+          <div class="button-row" style="margin-top:24px;">
+            <a class="button button-primary" href="mailto:vertosupport@agentmail.to?subject=Buy%20EU%20AI%20Act%20Toolkit&body=Hi,%20I%20want%20to%20buy%20the%20EU%20AI%20Act%20AI%20Governance%20Starter%20Kit%20for%20EUR%20149.%20Please%20send%20payment%20instructions.">Buy the starter kit</a>
+            <a class="button button-secondary" href="#checkout">See current checkout path</a>
+          </div>
+          <p style="margin-top:14px; color: rgba(249, 244, 237, 0.70);">
+            If the live checkout link is not active yet, the purchase is handled manually by email.
+          </p>
+        </div>
+
+        <div class="paper problem-card">
+          <h3>Why this is buyable</h3>
+          <ul class="lane-list" style="margin-top:18px;">
+            <li>
+              <strong>Visible deliverables</strong>
+              Buyers can judge the offer from the actual file list and intended use.
+            </li>
+            <li>
+              <strong>Lower trust requirement</strong>
+              Fixed scope and one-time pricing are easier to approve than an open-ended compliance engagement.
+            </li>
+            <li>
+              <strong>Clear next step</strong>
+              It creates a usable baseline that can later feed a review, customization sprint, or deeper advisory work.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" id="checkout">
+      <div class="container">
+        <div class="checkout-band">
+          <div class="section-head" style="margin-bottom:0;">
+            <div class="eyebrow">Current Purchase Path</div>
+            <h2>Checkout can be manual until the payment link is live.</h2>
+            <p class="lead">
+              The page is ready to capture purchase intent now. If checkout is not live, buyers email support, receive payment instructions, and get the toolkit manually after payment confirmation.
+            </p>
+          </div>
+          <div class="grid-2" style="margin-top:26px;">
+            <div>
+              <ul class="step-list">
+                <li class="step-item">
+                  <strong>1. Buyer clicks the CTA</strong>
+                  The main button opens an email to `vertosupport@agentmail.to` with a prefilled purchase request.
+                </li>
+                <li class="step-item">
+                  <strong>2. Send payment instructions</strong>
+                  Reply with invoice or payment-link details and confirm the one-time `EUR 149` price.
+                </li>
+                <li class="step-item">
+                  <strong>3. Fulfill manually</strong>
+                  After payment confirmation, send the toolkit by email within 24 hours on business days.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p><strong>Primary support contact:</strong> <a href="mailto:vertosupport@agentmail.to">vertosupport@agentmail.to</a></p>
+              <p style="margin-top:10px;"><strong>General contact:</strong> <a href="mailto:vertoos@agentmail.to">vertoos@agentmail.to</a></p>
+              <p class="micro-note" style="margin-top:18px;">
+                Internal shipping notes: <a href="CHECKOUT.md">CHECKOUT.md</a> and <a href="DELIVERY.md">DELIVERY.md</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">FAQ</div>
+          <h2>Direct answers to the obvious questions.</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-card paper">
+            <strong>Does buying this make us compliant with the EU AI Act?</strong>
+            <p>No. It gives you a practical first documentation layer. It does not guarantee compliance or replace specialist review.</p>
+          </div>
+          <div class="faq-card paper">
+            <strong>Is this legal advice?</strong>
+            <p>No. This is a documentation and governance starter pack for internal operational use.</p>
+          </div>
+          <div class="faq-card paper">
+            <strong>Do we get a custom audit or workshop?</strong>
+            <p>No. This offer is self-serve and fixed-scope by design. Follow-on services can exist later, but they are not included here.</p>
+          </div>
+          <div class="faq-card paper">
+            <strong>How do we receive the toolkit if checkout is not live yet?</strong>
+            <p>Email-based manual purchase and fulfillment. After payment confirmation, the toolkit is sent manually within 24 hours on business days.</p>
+          </div>
+          <div class="faq-card paper">
+            <strong>What tools are the templates designed for?</strong>
+            <p>Google Docs, Word, Notion, Excel, or Sheets. The value is in the structure, not in a proprietary platform.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        EU AI Act AI Governance Starter Kit. Self-serve documentation pack for ordinary business AI use.
+        No certification, no guaranteed compliance, and no bespoke consulting included in the base purchase.
+      </div>
+      <div>
+        Contact: <a href="mailto:vertosupport@agentmail.to">vertosupport@agentmail.to</a><br>
+        General: <a href="mailto:vertoos@agentmail.to">vertoos@agentmail.to</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
