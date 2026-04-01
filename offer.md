@@ -33,34 +33,22 @@ This pack gives a team a first documentation layer they can adapt this week inst
 
 ## What the buyer gets
 
-The purchase includes these editable files:
+The purchase includes these editable files in Markdown format:
 
-1. **`00-start-here.md`**
-   A 60-minute setup guide with suggested owner sequence and rollout order.
-
-2. **`01-ai-use-policy-template.docx`**
+1. **`AI-usage-policy.md`**
    An internal AI use policy covering approved use, prohibited behavior, confidentiality boundaries, review expectations, and escalation triggers.
 
-3. **`02-ai-use-case-register.xlsx`**
+2. **`ai-systems-register-template.md`**
    A working register for AI tools, owners, business purpose, data categories, review dates, and existing controls.
 
-4. **`03-ai-risk-triage-checklist.md`**
-   A fast triage checklist to separate ordinary business use from use cases that need deeper review.
-
-5. **`04-human-review-sop.md`**
-   A review procedure for AI-assisted output before it reaches customers, candidates, stakeholders, or production systems.
-
-6. **`05-incident-log-template.xlsx`**
+3. **`incident-log-template.md`**
    A log for hallucinations, misuse, policy breaches, data exposure concerns, and remediation actions.
 
-7. **`06-vendor-due-diligence-checklist.md`**
-   A lightweight due-diligence template for external AI vendors and model providers.
+4. **`vendor-review-checklist.md`**
+   A lightweight due diligence template for external AI vendors and model providers.
 
-8. **`07-training-attestation-template.docx`**
-   A simple staff acknowledgment confirming the policy was reviewed and responsibilities are understood.
-
-9. **`08-management-brief-template.md`**
-   A one-page leadership brief covering what exists, what is missing, and what should happen next.
+5. **`internal-review-sop.md`**
+   A standard operating procedure for human review of AI-assisted output before it reaches customers, candidates, or production systems.
 
 ## Format
 
