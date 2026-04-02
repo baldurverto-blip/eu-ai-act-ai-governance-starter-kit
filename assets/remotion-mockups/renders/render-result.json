@@ -1,0 +1,5 @@
+{
+  "svg": "/Users/baldurclaw/verto-workspace/products/zero-to-mrr/eu-ai-act-ai-governance-starter-kit/assets/remotion-mockups/renders/eu-ai-act-toolkit-preview.svg",
+  "png": "/Users/baldurclaw/verto-workspace/products/zero-to-mrr/eu-ai-act-ai-governance-starter-kit/assets/remotion-mockups/renders/eu-ai-act-toolkit-preview.png",
+  "pngError": "Command failed: /usr/bin/qlmanage -t -s 1600 -o /Users/baldurclaw/verto-workspace/products/zero-to-mrr/eu-ai-act-ai-governance-starter-kit/assets/remotion-mockups/renders /Users/baldurclaw/verto-workspace/products/zero-to-mrr/eu-ai-act-ai-governance-starter-kit/assets/remotion-mockups/renders/eu-ai-act-toolkit-preview.svg\nsandbox initialization failed: invalid data type of path filter; expected pattern, got boolean\n"
+}

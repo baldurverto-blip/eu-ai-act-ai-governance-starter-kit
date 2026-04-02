@@ -1,32 +1,58 @@
 # Delivery Runbook
 
-## Current fulfillment model
+> **Status:** Manual post-payment fulfillment
+> **Last Updated:** 2026-04-02
 
-Manual fulfillment by email after payment confirmation.
+## Current Fulfillment Model
 
-## Fulfillment steps
+After payment is confirmed, send the toolkit manually by email within 24 hours on business days.
 
-1. Confirm the buyer paid for the `EUR 149` toolkit.
-2. Reply from `vertosupport@agentmail.to` or coordinate via `vertoos@agentmail.to`.
-3. Send:
-   - the toolkit files or a download link
-   - a short note confirming what is included
-   - the plain-language disclaimer that this is not legal advice and not a compliance guarantee
-4. Ask the buyer to confirm receipt.
+Primary contact:
 
-## Recommended fulfillment message
+- `vertosupport@agentmail.to`
+
+## Standard Fulfillment Workflow
+
+1. Confirm the buyer completed the `EUR 149` purchase via Stripe or approved invoice payment.
+2. Reply from `vertosupport@agentmail.to`.
+3. Attach the current toolkit files or a packaged archive containing them.
+4. Include the plain-language disclaimer that the toolkit is not legal advice and does not guarantee compliance.
+5. Ask the buyer to reply if there are any delivery issues.
+
+## Files To Send
+
+Required buyer pack:
+
+- `README-deliverables.md`
+- `docs/AI-usage-policy.md`
+- `docs/ai-systems-register-template.md`
+- `docs/internal-review-sop.md`
+- `docs/incident-log-template.md`
+- `docs/vendor-review-checklist.md`
+
+Optional trust/sample file:
+
+- `docs/sample-ai-systems-register.md`
+
+Optional buyer follow-up:
+
+- `intake.md`
+
+Use `intake.md` only if the buyer asks for light tailoring or if you want to qualify follow-on services. It is not required for the base purchase.
+
+## Recommended Fulfillment Message
 
 Subject: `Your EU AI Act AI Governance Starter Kit`
 
 Body:
 
-`Thanks for your purchase. Attached is the EU AI Act AI Governance Starter Kit. It includes the policy template, use-case register, triage checklist, review SOP, incident log, vendor checklist, training attestation, management brief, and start-here guide. This toolkit is an operational starting point and does not constitute legal advice or guaranteed compliance. Reply here if you have any delivery issues.`
+`Thanks for your purchase. Attached is the EU AI Act AI Governance Starter Kit. It includes the AI usage policy, AI systems register template, internal review SOP, incident log template, vendor review checklist, and the implementation overview. This toolkit is an operational starting point. It is not legal advice and does not guarantee compliance with the EU AI Act or any other regulation. Reply here if you have any delivery issues or need an invoice record.`
 
-## Service level
+## Service Level
 
 - target send time: within 24 hours on business days
-- if delayed, send a short acknowledgment and updated ETA
+- if delayed, send a short acknowledgment with an updated ETA
 
-## Remaining improvement
+## Current Improvement Opportunity
 
-Package the toolkit into a single downloadable archive and connect it to a live checkout so delivery becomes automatic.
+Move from manual email fulfillment to instant download automation after purchase.

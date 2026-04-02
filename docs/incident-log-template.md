@@ -2,6 +2,8 @@
 
 > **Purpose:** Track and manage AI-related incidents for governance and continuous improvement.
 > **Status:** Starter template — adapt to your incident management process.
+> **Why it matters:** When something goes wrong with AI — a hallucination in a customer email, a data leak, policy misuse — you need a record. Without one, patterns go unnoticed, root causes aren't addressed, and you have no evidence trail if questions arise.
+> **Audience:** Small EU teams wanting a practical incident tracking baseline.
 
 ---
 
@@ -80,8 +82,10 @@ Date the incident was fully resolved
 
 | ID | Date | Reporter | AI Tool | Incident Type | Description | Severity | Root Cause | Corrective Action | Status | Resolved Date |
 |----|------|----------|---------|---------------|-------------|----------|------------|-------------------|--------|---------------|
-| INC-001 | 2024-02-15 | Sarah M. | ChatGPT | Hallucination | AI generated fictional regulatory requirements in customer-facing email draft | Medium | Human review not performed | Required second-pass review for all external communications | Resolved | 2024-02-16 |
-| INC-002 | 2024-03-01 | James L. | Claude | Data Exposure | Engineer input proprietary algorithm into external AI for debugging | High | Unclear policy on technical IP | Added IP handling to policy, conducted team training | Resolved | 2024-03-05 |
+| INC-001 | 2026-02-15 | Sarah M. | ChatGPT | Hallucination | AI generated fictional regulatory requirements in a customer email draft and the issue was caught during review | Medium | Human review was too late in the drafting flow | Required second-pass review before any external send | Resolved | 2026-02-16 |
+| INC-002 | 2026-03-01 | James L. | Claude | Data Exposure | Engineer input proprietary algorithm details into an external AI tool for debugging | High | Unclear policy on technical IP and prompt boundaries | Added IP handling guidance to policy and ran team refresher training | Resolved | 2026-03-05 |
+| INC-003 | 2026-03-18 | Ops team | Microsoft Copilot | Policy Breach | Copilot suggested including internal pricing notes in an external reply and the draft was stopped before send | Low | Author accepted AI suggestions without enough review | Reinforced review expectations for all suggested content | Resolved | 2026-03-18 |
+| INC-004 | 2026-04-02 | Marketing | Notion AI | Output Quality | AI-generated blog draft contained outdated product pricing and needed manual correction before publication | Low | Source material in workspace was stale | Added product-fact check step before publication | Resolved | 2026-04-02 |
 
 ---
 
@@ -105,3 +109,8 @@ Review all logged incidents quarterly to:
 - Update controls and policies as needed
 - Report summary to leadership
 
+## Document Control
+
+| Version | Date | Author | Changes |
+|---------|------|--------|---------|
+| 1.0 | 2026-04-02 | Verto Studios | Initial starter-kit release |

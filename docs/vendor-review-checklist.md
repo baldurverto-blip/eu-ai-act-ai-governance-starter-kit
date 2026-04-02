@@ -2,6 +2,8 @@
 
 > **Purpose:** Lightweight due diligence for evaluating AI tools and model vendors before use.
 > **Status:** Starter checklist — adapt to your vendor assessment process.
+> **Why it matters:** Every AI tool your team uses is a vendor relationship. Before adopting a new tool, you should understand: Where does data go? Who can see it? What are the vendor's security practices? This checklist makes that assessment practical.
+> **Audience:** Small EU teams wanting a quick but thorough vendor assessment without enterprise procurement overhead.
 
 ---
 
@@ -103,3 +105,8 @@ _Use this section to document any additional concerns, mitigation plans, or cont
 | Compliance Alignment | Low | GDPR-compliant with DPA |
 | **Overall Risk** | **Low** | Acceptable for internal use cases |
 
+## Document Control
+
+| Version | Date | Author | Changes |
+|---------|------|--------|---------|
+| 1.0 | 2026-04-02 | Verto Studios | Initial starter-kit release |

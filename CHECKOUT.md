@@ -1,35 +1,39 @@
 # Checkout Status
 
-## Current state
+> **Status:** Live Stripe checkout
+> **Last Updated:** 2026-04-02
 
-There is no live self-serve checkout yet.
+## Current State
 
-The site can still accept first-sale intent through a manual purchase path.
+The primary self-serve checkout is live:
 
-## Current purchase flow
+- `https://buy.stripe.com/4gM9AV3W48px3Fa0oK24003`
 
-1. Buyer clicks the primary CTA placeholder or emails `vertosupport@agentmail.to`.
-2. Reply with:
-   - confirmation that the toolkit is a one-time purchase for `EUR 149`
-   - payment instructions or invoice link
-   - expected fulfillment timing
-3. After payment is confirmed, send the toolkit manually by email.
-4. Include `DELIVERY.md` steps in the internal handoff so fulfillment is consistent.
+The manual fallback remains available for invoicing or buyer issues:
 
-## CTA wording to use now
+- `vertosupport@agentmail.to`
+
+## Current Purchase Flow
+
+1. Buyer clicks the main CTA in `index.html`.
+2. Buyer completes Stripe checkout for the one-time `EUR 149` purchase.
+3. If Stripe is unavailable or invoicing is needed, buyer emails `vertosupport@agentmail.to`.
+4. After payment is confirmed, fulfill manually by email within 24 hours on business days.
+
+## Buyer-Facing Wording To Use
 
 - `Buy the starter kit - EUR 149`
-- `Manual checkout: email vertosupport@agentmail.to`
-- `If checkout is not live yet, we will fulfill manually within 24 hours on business days.`
+- `Secure Stripe checkout`
+- `Need an invoice or help with checkout? Contact vertosupport@agentmail.to`
+- `Manual fulfillment within 24 hours on business days after payment confirmation`
 
-## What remains before live checkout
+## Remaining Manual Steps
 
-- choose payment processor
-- create payment link or hosted checkout
-- connect success page / receipt flow
-- upload packaged files for instant delivery
-- replace placeholder CTA URLs in `index.html`
+- confirm payment or support request
+- send toolkit files by email
+- include the plain-language disclaimer
+- confirm receipt if the buyer reports any delivery issue
 
-## Exact blocker
+## Current Constraint
 
-The only blocker for a fully automated first sale is the absence of a live payment link or hosted checkout.
+Checkout is live, but fulfillment is still manual rather than instant download automation.

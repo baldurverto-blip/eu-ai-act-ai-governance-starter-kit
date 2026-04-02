@@ -1,0 +1,10 @@
+{
+  "name": "eu-ai-act-remotion-mockups",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Isolated mockup renderer for EU AI Act toolkit preview assets.",
+  "type": "module",
+  "scripts": {
+    "render:preview": "node scripts/render-preview.mjs && python3 scripts/render-preview-png.py"
+  }
+}

@@ -2,6 +2,8 @@
 
 > **Purpose:** Standard operating procedure for human review of AI-assisted output.
 > **Status:** Starter SOP — adapt to your team's review workflow.
+> **Why it matters:** The biggest risk with AI in business isn't the tool itself — it's unchecked output reaching the wrong audience. A simple review checkpoint dramatically reduces hallucination risk, confidentiality leaks, and brand damage.
+> **Audience:** Small EU teams (5–100 people) wanting practical review workflows without enterprise overhead.
 
 ---
 
@@ -30,23 +32,27 @@ This procedure applies to all AI-assisted output that will be:
 ## 4. Review Tiers
 
 ### Tier 1: Standard Review
-**When:** Internal documents, emails, meeting notes, drafts
+**When:** Internal documents, emails, meeting notes, internal drafts
 
-- Author reviews own output for coherence and basic accuracy
+- Author reviews own output for coherence, basic accuracy, and appropriate tone
+- Quick sanity check: "Would I be comfortable sending this internally?"
 - No second person required unless author has concerns
 
 ### Tier 2: Business Review
-**When:** Customer-facing content, proposals, external communications
+**When:** Customer-facing content, external communications, proposals, quotes, reports
 
-- Second person reviews for accuracy, tone, and brand alignment
-- Reviewer initials or logs the review
+- Second person reviews for accuracy, tone, brand alignment, and confidentiality
+- Reviewer adds initials or log entry with date
+- This is where most small teams need to be disciplined
 
 ### Tier 3: Elevated Review
-**When:** Public-facing content, legal/financial implications, hiring decisions
+**When:** Public-facing content (website, blog, social media), legal/financial implications, hiring decisions, press statements
 
 - Two-person review minimum
 - Manager or owner sign-off required
-- Document review in project/log
+- Document review in project log or email trail
+
+> **Quick rule:** If you're unsure which tier applies, err on the side of the higher tier. The cost of extra review is small compared to the cost of a mistake.
 
 ---
 
@@ -139,5 +145,4 @@ All team members using AI tools should:
 
 | Version | Date | Owner | Changes |
 |---------|------|-------|---------|
-| 1.0 | [DATE] | [NAME] | Initial release |
-
+| 1.0 | 2026-04-02 | Verto Studios | Initial starter-kit release |

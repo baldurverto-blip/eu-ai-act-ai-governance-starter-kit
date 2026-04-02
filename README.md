@@ -1,103 +1,65 @@
 # EU AI Act AI Governance Starter Kit
 
-## What this product is
+> **Status:** Live buyer-ready product
+> **Last Updated:** 2026-04-02
+> **Public URL:** `https://baldurverto-blip.github.io/eu-ai-act-ai-governance-starter-kit/`
 
-This is a one-time downloadable toolkit for EU teams already using AI in normal business operations and needing a credible first governance layer.
+## Product Summary
 
-It is designed to be:
+This repository contains the shipped version of a one-time downloadable AI governance starter kit for small EU teams already using AI in normal business operations.
 
-- concrete enough to buy on a company card
-- narrow enough to stay credible
-- self-serve enough to deliver without calls
+The offer is intentionally narrow:
 
-It is not:
+- practical documentation baseline
+- editable Markdown files
+- real Stripe checkout at `EUR 149`
+- explicit non-legal-advice and non-compliance-guarantee language
+
+The offer does **not** include:
 
 - legal advice
-- a compliance certification
-- a bespoke audit
-- a full implementation project
+- certification
+- bespoke consulting
+- coverage for high-risk, prohibited, safety-critical, or heavily regulated AI use cases
 
-## Buyer
+## Current Included Files
 
-Best-fit buyer:
+Core buyer deliverables:
 
-- EU-based SaaS companies, agencies, consultancies, and service businesses
-- 5-100 person teams
-- already using ChatGPT, Claude, Copilot, Gemini, Notion AI, or embedded AI features
-- founder, ops lead, product lead, security owner, or compliance owner carrying governance part-time
+1. `docs/AI-usage-policy.md`
+2. `docs/ai-systems-register-template.md`
+3. `docs/internal-review-sop.md`
+4. `docs/incident-log-template.md`
+5. `docs/vendor-review-checklist.md`
+6. `README-deliverables.md`
 
-Not a fit:
+Buyer trust/sample file:
 
-- teams needing formal legal advice
-- teams selling or deploying high-risk AI systems
-- medical, biometric, employment-scoring, law-enforcement, safety-critical, or heavily regulated AI use cases
-- buyers expecting consulting or custom implementation inside the purchase
+1. `docs/sample-ai-systems-register.md`
 
-## Core outcome
+Commercial and ops files:
 
-The buyer gets a practical first documentation layer they can adapt this week:
+1. `index.html`
+2. `offer.md`
+3. `CHECKOUT.md`
+4. `DELIVERY.md`
+5. `intake.md`
 
-- an internal AI use policy
-- a use-case register
-- a risk triage checklist
-- a human review SOP
-- an incident log
-- a vendor due-diligence checklist
-- a training attestation template
-- a management brief
+Preview assets:
 
-The promise is simple: help a small team move from undocumented AI usage to a basic, editable governance baseline.
+1. `assets/remotion-mockups/renders/eu-ai-act-toolkit-preview.png`
+2. `assets/remotion-mockups/renders/eu-ai-act-toolkit-preview.svg`
 
-## Included toolkit files
+## Checkout And Delivery
 
-1. `00-start-here.md`
-   Setup guide with owner suggestions and a 60-minute first pass.
-2. `01-ai-use-policy-template.docx`
-   Internal AI use policy covering approved use, prohibited behavior, confidentiality boundaries, and escalation triggers.
-3. `02-ai-use-case-register.xlsx`
-   Register of AI tools, use cases, owners, data categories, review dates, and controls.
-4. `03-ai-risk-triage-checklist.md`
-   Fast screening checklist for ordinary versus elevated-risk use cases.
-5. `04-human-review-sop.md`
-   Review procedure for AI-assisted output before it reaches customers, candidates, stakeholders, or production systems.
-6. `05-incident-log-template.xlsx`
-   Log for hallucinations, misuse, data exposure concerns, policy breaches, and corrective actions.
-7. `06-vendor-due-diligence-checklist.md`
-   Lightweight supplier review for external AI tools and model vendors.
-8. `07-training-attestation-template.docx`
-   Staff acknowledgment that the policy was reviewed and understood.
-9. `08-management-brief-template.md`
-   One-page leadership summary of what exists, what is missing, and what should happen next.
+- Primary checkout: `https://buy.stripe.com/4gM9AV3W48px3Fa0oK24003`
+- Support / invoice fallback: `vertosupport@agentmail.to`
+- Fulfillment model: buyer pays via Stripe, then receives the toolkit manually by email within 24 hours on business days
 
-## Pricing and purchase state
+See `CHECKOUT.md` and `DELIVERY.md` for the exact current workflow.
 
-- launch price placeholder: `EUR 149` one-time
-- delivery model: downloadable toolkit
-- current fulfillment path: manual until checkout is live
+## Publishing Notes
 
-See `CHECKOUT.md` for the purchase path and `DELIVERY.md` for fulfillment steps.
-
-## Messaging guardrails
-
-- promise structure, speed, and a credible starting point
-- do not promise guaranteed compliance
-- do not imply certification, registration, or regulator approval
-- be explicit that this is an operational documentation toolkit
-- be explicit about who should not buy it
-
-## Next expansion path
-
-This starter offer can expand into:
-
-1. Applicability review
-2. Gap assessment
-3. Implementation sprint
-4. Ongoing documentation upkeep
-
-## Files in this folder
-
-- `README.md` — internal positioning and shipping notes
-- `offer.md` — tightened sales offer
-- `index.html` — static landing page
-- `CHECKOUT.md` — current purchase flow and live-checkout gap
-- `DELIVERY.md` — manual fulfillment runbook
+- `index.html` is the live landing page for GitHub Pages
+- social preview metadata points to the GitHub Pages URL for this repo
+- the mockup asset is already rendered locally and committed as a static preview image
