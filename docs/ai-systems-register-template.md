@@ -1,116 +1,195 @@
 # AI Systems Register Template
 
-> **Purpose:** Inventory of all AI tools and use cases in use across the organization.
-> **Status:** Starter template — maintain and update as use evolves.
-> **Why it matters:** You cannot govern what you do not know about. This register creates the foundational inventory that most teams are missing, and it becomes the reference point for any later compliance discussion.
-> **Audience:** Small EU teams (5–100 people) wanting a practical governance baseline.
+> **Purpose:** Maintain a working inventory of AI tools, workflows, owners, data types, and current controls.
+> **Status:** Editable operational template.
+> **Audience:** Small EU teams that need a usable first-pass register, not a heavyweight governance database.
+> **Important:** This register helps a team document and review its AI usage. It is not by itself a legal determination, a compliance guarantee, or a substitute for specialist advice on high-risk or regulated use cases.
 
----
+## Why this register matters
 
-## Instructions
+Most teams cannot answer basic questions about their AI usage with confidence:
 
-1. List every AI tool used in your organization
-2. Document the business purpose for each use case
-3. Identify the data categories involved
-4. Set review dates and controls
-5. Assign ownership for each entry
-6. Update quarterly or when new tools are introduced
+- Which tools are actually in use?
+- Which team uses each tool and for what?
+- What data is being entered?
+- Who owns the use case?
+- Which outputs need review?
+- Which uses are routine and which are more sensitive?
 
-> **Tip:** Start with what you actually use today. Most small teams discover they're using 5-10 AI tools across the organization when they first do this exercise. That visibility alone is valuable for governance.
+This register gives you one place to record those answers. For a small team, that alone is a major governance improvement.
 
-## How this supports EU AI Act readiness
+## How to use this template
 
-While this register is not a compliance certificate, it creates the documentation baseline that becomes relevant when:
-- Mapping AI systems to regulatory requirements
-- Responding to information requests from authorities
-- Conducting internal risk assessments
-- Demonstrating due diligence to partners or customers
+Recommended first pass:
 
-The register answers the first question regulators ask: "What AI systems are you using, and for what purpose?"
+1. List the AI tools already in use, not just the officially approved ones.
+2. Add one row per meaningful tool-and-use-case combination.
+3. Keep the descriptions plain and specific.
+4. Name an owner for each row.
+5. Record the current controls honestly, even if they are light.
+6. Mark where stronger review is needed.
 
----
+Do not wait for perfect information. A 70 percent-complete register is more useful than no register.
 
-## AI Systems Register
+## Who should maintain it
 
-| # | AI Tool | Vendor | Version/Model | Business Purpose | User Group | Data Categories | Risk Level | Owner | Review Date | Controls |
-|---|---------|--------|---------------|-------------------|------------|-----------------|-------------|-------|-------------|----------|
-| 1 | | | | | | | | | | |
-| 2 | | | | | | | | | | |
-| 3 | | | | | | | | | | |
-| 4 | | | | | | | | | | |
-| 5 | | | | | | | | | | |
-| 6 | | | | | | | | | | |
-| 7 | | | | | | | | | | |
-| 8 | | | | | | | | | | |
-| 9 | | | | | | | | | | |
-| 10 | | | | | | | | | | |
+- Primary maintainer: `[Operations Lead / Compliance Lead / Security Lead]`
+- Department contributors: `[Engineering Lead / Marketing Lead / Customer Success Lead / People Lead]`
+- Review cadence owner: `[Name]`
 
----
+Practical ownership rule:
+The central owner maintains the file, but each department should confirm the rows that describe its own use.
 
-## Field Definitions
+## Suggested review cadence
 
-### AI Tool
-Name of the AI tool or service (e.g., ChatGPT, Claude, Copilot, Notion AI)
+- Monthly for the first 2-3 months after rollout if usage is changing quickly
+- Quarterly once the toolset is relatively stable
+- Immediately after any material incident, vendor change, or new use case rollout
 
-### Vendor
-Company providing the tool (e.g., OpenAI, Anthropic, Microsoft, Google)
+## Completion instructions
 
-### Version/Model
-Specific model or version in use (e.g., GPT-4, Claude 3.5 Sonnet)
+For each entry:
 
-### Business Purpose
-Describe what the tool is used for in your organization
+- describe the real business purpose, not a vague category
+- note the main user group
+- state the main data categories involved
+- assign a practical internal risk label
+- note the review or approval rule that applies
+- name the owner who can answer questions about the row
 
-### User Group
-Which team or role uses this tool (e.g., Marketing, Engineering, Sales, Operations)
+If one tool has very different use cases, create separate rows. For example, internal brainstorming and customer support drafting should not be merged into one entry just because they use the same vendor.
 
-### Data Categories
-What types of data are processed:
-- Internal (non-sensitive)
-- Internal (confidential)
-- Customer PII
-- Financial data
-- Legal/privileged
-- Health data
-- None / public data only
+## Recommended field definitions
 
-### Risk Level
-- **Ordinary:** Internal drafting, research, summarization, coding assistance — the vast majority of small team AI use
-- **Elevated:** Customer-facing content, material business decisions, sensitive internal data
-- **High:** Employment decisions, credit decisions, healthcare, legal advice, biometric processing, law enforcement, scoring or ranking of individuals
+| Field | What to enter | Practical guidance |
+|---|---|---|
+| Register ID | Unique identifier such as `AI-001` | Keep it stable even if the row changes |
+| Tool / workflow name | Product or internal workflow name | Be specific enough that staff can recognize it |
+| Vendor | External provider or internal team | If internal, note the underlying model/provider if known |
+| Business purpose | What the tool helps the team do | Use plain language, for example "draft support replies for agent review" |
+| Department / users | Who uses it | Team names or roles are enough |
+| Data categories | Main input or output data involved | Use the same categories as your policy if possible |
+| Use context | Internal only, external draft, production-adjacent, automated, etc. | Helps show where extra controls are needed |
+| Internal risk label | Ordinary / Elevated / High attention | Keep labels simple and usable |
+| Required review | Self-review, manager review, second-person review, PR review, etc. | Match the internal review SOP |
+| Owner | Person accountable for the workflow | Use a real role or name |
+| Vendor diligence status | Not started / In progress / Completed / Not required | Link to the vendor review checklist if used |
+| Last review date | Date of latest check | Use ISO format for consistency |
+| Next review date | Planned date | Keep the cadence realistic |
+| Notes / controls | Current safeguards and open issues | This is often the most useful field |
 
-> **Note on high-risk:** If any of your use cases map to the EU AI Act's high-risk categories (Annex III), you likely need specialist advice beyond what this toolkit provides. This template is designed for ordinary and elevated use cases.
+## Suggested internal risk labels
 
-### Owner
-Person responsible for this tool's usage and compliance
+These labels are for practical prioritization, not legal classification.
 
-### Review Date
-When this use case should be reviewed (recommend quarterly)
+### Ordinary
 
-### Controls
-Existing or planned controls (e.g., human review, output logging, access restrictions)
+Typical examples:
 
----
+- internal drafting and rewriting
+- brainstorming and summarization
+- engineering assistance with normal code review
+- internal note cleanup
 
-## Example Entries
+Typical controls:
 
-| # | AI Tool | Vendor | Version/Model | Business Purpose | User Group | Data Categories | Risk Level | Owner | Review Date | Controls |
-|---|---------|--------|---------------|-------------------|------------|-----------------|-------------|-------|-------------|----------|
-| 1 | ChatGPT Team | OpenAI | GPT-4.1 class models | Email drafting, meeting-note cleanup, internal research support | All staff | Internal (non-sensitive) | Ordinary | Operations Lead | 2026-07-01 | Training acknowledgment signed, human review before external use |
-| 2 | Claude | Anthropic | Claude 3.7 Sonnet | Code review and technical writing | Engineering | Internal (confidential) | Ordinary | Engineering Lead | 2026-07-01 | No credentials or customer data in prompts |
-| 3 | Notion AI | Notion | Current | Internal documentation assistance | All staff | Internal (non-sensitive) | Ordinary | Operations Lead | 2026-07-01 | Workspace access controls maintained |
-| 4 | Microsoft 365 Copilot | Microsoft | 365 Copilot | Email and document assistance | Sales, Marketing | Customer contact details possible | Elevated | Revenue Operations Lead | 2026-07-01 | Human review before external send, manager approval for sensitive workflows |
+- approved tool only
+- no secrets or restricted data
+- user self-review
 
----
+### Elevated
 
-## Maintenance
+Typical examples:
 
-- **Quarterly review:** Update register quarterly or when new AI tools are introduced
-- **Annual audit:** Full review of all entries for accuracy and completeness
-- **Incident-driven:** Update immediately after any AI-related incident
+- customer-facing drafts
+- public marketing content
+- workflows involving personal data
+- people-process or commercial workflows
+- automation that triggers downstream actions
 
-## Document Control
+Typical controls:
 
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | 2026-04-02 | Verto Studios | Initial starter-kit release |
+- second-person review
+- tighter data limits
+- named owner
+- more frequent review
+
+### High attention
+
+Typical examples:
+
+- use cases affecting an identifiable person materially
+- sensitive HR, legal, financial, or regulated workflows
+- tools connected to important internal systems or production actions
+
+This starter kit is not intended to resolve whether a use case falls within a formal high-risk category under the EU AI Act. If you are close to that boundary, get specialist review.
+
+## AI systems register template
+
+| Register ID | Tool / Workflow Name | Vendor | Business Purpose | Department / Users | Data Categories | Use Context | Internal Risk Label | Required Review | Owner | Vendor Diligence Status | Last Review Date | Next Review Date | Notes / Current Controls |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| AI-001 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| AI-002 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| AI-003 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| AI-004 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| AI-005 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| AI-006 |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+## Example entries
+
+| Register ID | Tool / Workflow Name | Vendor | Business Purpose | Department / Users | Data Categories | Use Context | Internal Risk Label | Required Review | Owner | Vendor Diligence Status | Last Review Date | Next Review Date | Notes / Current Controls |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| AI-001 | ChatGPT Team for internal drafting | OpenAI | Draft internal memos, meeting note cleanup, research summaries, first-pass policy drafts | Operations, founders, marketing | Public, internal non-sensitive, limited confidential business info | Internal drafting only | Ordinary | Self-review before internal use; second-person review before external reuse | Head of Operations | Completed | 2026-04-01 | 2026-07-01 | No personal data unless separately approved; no client secrets; policy acknowledgment required |
+| AI-002 | Microsoft 365 Copilot for sales and account work | Microsoft | Draft customer emails and summarize internal account materials | Sales, customer success | Internal non-sensitive, customer contact details, limited customer context | External draft support | Elevated | Human approval before any external send | Revenue Operations Lead | Completed | 2026-04-01 | 2026-06-15 | No automated sending; pricing and commitments must be verified manually |
+| AI-003 | GitHub Copilot in engineering workflow | GitHub / Microsoft | Suggest code, tests, and documentation snippets | Engineering | Internal code, technical documentation | Production-adjacent | Elevated | Normal PR review plus security review where applicable | Engineering Manager | Completed | 2026-04-01 | 2026-07-15 | No credentials or production secrets in prompts; generated code is treated like junior-contributor code |
+| AI-004 | Notion AI for people and ops docs | Notion | Draft handbooks, summarize meeting notes, format internal process docs | Operations, people ops | Internal non-sensitive, limited confidential operations content | Internal documentation | Elevated | Manager review for policy or people-process docs | People Operations Lead | In progress | 2026-04-01 | 2026-06-01 | No employee case details; restricted workspace permissions |
+
+## Practical prompts for completing missing rows
+
+If a department lead says "we only use AI a little," ask:
+
+- Which tool do you open most often?
+- What do you ask it to do?
+- What information do you paste in?
+- Does any output go to customers or the public?
+- Who would notice first if it went wrong?
+
+Those answers usually produce a usable row.
+
+## Common mistakes when maintaining the register
+
+- listing vendors but not the actual use case
+- using risk labels with no explanation or controls
+- failing to split clearly different workflows into separate rows
+- naming an owner who is not actually involved
+- never updating the document after the first completion pass
+- treating "everyone uses it" as a substitute for ownership
+
+## Implementation notes for buyers
+
+This template becomes substantially more useful when it is linked to the rest of the pack:
+
+- the policy defines what is allowed
+- the register shows where AI is actually used
+- the review SOP defines the checking step
+- the incident log captures failures or near misses
+- the vendor checklist supports diligence on the tool itself
+
+For a team of 5-30 people, a realistic first version of this file is usually 4-12 rows.
+
+## Optional extra fields if your team needs them
+
+Add these only if they genuinely help:
+
+- contract or DPA reference
+- model version or environment
+- automation trigger or integration path
+- output retention location
+- customer disclosure requirement
+- decommission date
+
+## Document control
+
+| Version | Date | Owner | Change summary |
+|---|---|---|---|
+| 2.0 | 2026-04-03 | Verto Studios starter template | Rewritten with stronger field guidance, ownership, examples, and implementation notes |
