@@ -42,11 +42,11 @@ Use `intake.md` only if the buyer asks for light tailoring or if you want to qua
 
 ## Recommended Fulfillment Message
 
-Subject: `Your EU AI Act AI Governance Starter Kit`
+Subject: `Your AI Governance Starter Kit for EU Teams`
 
 Body:
 
-`Thanks for your purchase. Attached is the EU AI Act AI Governance Starter Kit. It includes the AI usage policy, AI systems register template, internal review SOP, incident log template, vendor review checklist, and the implementation overview. This toolkit is an operational starting point. It is not legal advice and does not guarantee compliance with the EU AI Act or any other regulation. Reply here if you have any delivery issues or need an invoice record.`
+`Thanks for your purchase. Attached is the AI Governance Starter Kit for EU Teams. It includes the AI usage policy, AI systems register template, internal review SOP, incident log template, vendor review checklist, and the implementation overview. This toolkit is an operational starting point for ordinary business AI use. It is not legal advice and does not by itself guarantee compliance with the EU AI Act or any other regulation. Reply here if you have any delivery issues or need an invoice record.`
 
 ## Service Level
 

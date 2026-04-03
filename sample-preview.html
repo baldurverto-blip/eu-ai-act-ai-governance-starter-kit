@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample AI Systems Register | AI Governance Starter Kit for EU Teams</title>
+  <meta name="description" content="Preview the sample AI systems register from the AI Governance Starter Kit for EU Teams.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    :root {
+      --bg: #f4ecdf;
+      --paper: #fffaf2;
+      --ink: #171513;
+      --ink-soft: #5b544b;
+      --line: rgba(23, 21, 19, 0.1);
+      --signal: #c45d2f;
+      --moss: #31473f;
+      --moss-soft: rgba(49, 71, 63, 0.12);
+      --signal-soft: rgba(196, 93, 47, 0.14);
+      --shadow: 0 24px 60px rgba(38, 28, 17, 0.12);
+      --radius: 24px;
+    }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.9), transparent 30%),
+        linear-gradient(180deg, #f7f0e5 0%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 80px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--signal);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 28px;
+      margin-bottom: 34px;
+    }
+    .panel {
+      background: rgba(255, 250, 242, 0.88);
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px;
+    }
+    h1, h2 {
+      margin: 0;
+      font-family: Iowan Old Style, Palatino Linotype, Book Antiqua, Georgia, serif;
+      letter-spacing: -0.04em;
+      line-height: 0.98;
+    }
+    h1 { font-size: clamp(2.6rem, 6vw, 4.8rem); max-width: 12ch; }
+    h2 { font-size: 1.4rem; margin-bottom: 14px; }
+    p { margin: 0; color: var(--ink-soft); }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.7);
+      color: var(--signal);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: currentColor;
+    }
+    .bullet-list {
+      margin: 18px 0 0;
+      padding-left: 18px;
+      color: var(--ink-soft);
+    }
+    .stat-card {
+      display: grid;
+      gap: 14px;
+      align-content: start;
+      background: linear-gradient(180deg, #2e2a25 0%, #171513 100%);
+      color: #fff8f2;
+    }
+    .stat-card p { color: rgba(255, 248, 242, 0.76); }
+    .stat {
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.6rem;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .table-panel {
+      overflow: hidden;
+      padding: 0;
+    }
+    .table-header {
+      padding: 22px 26px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(246, 238, 226, 0.82);
+    }
+    .table-wrap {
+      overflow-x: auto;
+      padding: 0 26px 22px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 920px;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 16px 10px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-soft);
+    }
+    td strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .badge-ordinary { background: var(--moss-soft); color: var(--moss); }
+    .badge-elevated { background: var(--signal-soft); color: #8f3f1f; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      margin-top: 34px;
+    }
+    .info-list {
+      display: grid;
+      gap: 14px;
+    }
+    .info-item {
+      padding: 18px 20px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.56);
+    }
+    .info-item strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 22px;
+      margin-top: 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--signal) 0%, #8f3f1f 100%);
+      color: #fff8f2;
+    }
+    @media (max-width: 900px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      .panel { padding: 26px; }
+      .table-header { padding: 18px 20px; }
+      .table-wrap { padding: 0 20px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back-link" href="index.html#sample">Back to the product page</a>
+
+    <section class="hero">
+      <div class="panel">
+        <div class="eyebrow">Free Sample Preview</div>
+        <h1>Sample AI Systems Register</h1>
+        <p style="margin-top:18px;">
+          This is a buyer preview from the AI Governance Starter Kit for EU Teams. It shows the level of structure used to document ordinary business AI usage, including owners, data categories, review dates, and current controls.
+        </p>
+        <ul class="bullet-list">
+          <li>Useful for teams building a first-pass AI inventory</li>
+          <li>Relevant to later EU AI Act review because systems and controls are documented clearly</li>
+          <li>Designed as a practical governance record, not a legal conclusion</li>
+        </ul>
+      </div>
+
+      <div class="panel stat-card">
+        <h2>What this preview proves</h2>
+        <p>The paid toolkit looks like a real documentation pack, with inspectable structure before purchase.</p>
+        <div class="stat">
+          <strong>4</strong>
+          Example systems with named owners
+        </div>
+        <div class="stat">
+          <strong>3</strong>
+          Risk and control patterns shown directly
+        </div>
+        <div class="stat">
+          <strong>EUR 149</strong>
+          Full pack price via secure Stripe checkout
+        </div>
+      </div>
+    </section>
+
+    <section class="panel table-panel">
+      <div class="table-header">
+        <h2>Preview Table</h2>
+        <p>Sample entries adapted from the included register preview file, formatted to show the buyer-facing level of detail.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>AI Tool</th>
+              <th>Business Purpose</th>
+              <th>Data Categories</th>
+              <th>Risk</th>
+              <th>Owner</th>
+              <th>Review Date</th>
+              <th>Current Controls</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>ChatGPT Team</strong>OpenAI, GPT-4.1 class models</td>
+              <td>Internal drafting, summarization, brainstorming, and meeting-note cleanup</td>
+              <td>Internal non-sensitive, limited confidential business information</td>
+              <td><span class="badge badge-ordinary">Ordinary</span></td>
+              <td>Head of Operations</td>
+              <td>2026-07-01</td>
+              <td>Internal use only, no customer secrets, human review before external use</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Microsoft 365 Copilot</strong>Microsoft</td>
+              <td>Email drafting, spreadsheet assistance, and internal document support</td>
+              <td>Internal non-sensitive, customer contact details in approved workflows</td>
+              <td><span class="badge badge-elevated">Elevated</span></td>
+              <td>Revenue Operations Lead</td>
+              <td>2026-07-01</td>
+              <td>Manager approval for customer-facing workflows, human review before send</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>GitHub Copilot</strong>GitHub / Microsoft</td>
+              <td>Code suggestions and developer productivity support</td>
+              <td>Internal code, internal technical documentation</td>
+              <td><span class="badge badge-ordinary">Ordinary</span></td>
+              <td>Engineering Manager</td>
+              <td>2026-07-15</td>
+              <td>No credentials in prompts, code review required, production changes stay in the normal review process</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>Notion AI</strong>Notion</td>
+              <td>Internal knowledge-base drafting and summary support</td>
+              <td>Internal non-sensitive, limited HR process content</td>
+              <td><span class="badge badge-elevated">Elevated</span></td>
+              <td>People Operations Manager</td>
+              <td>2026-06-15</td>
+              <td>Restricted workspace permissions, no sensitive HR case details, quarterly review</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <h2>How to evaluate the sample</h2>
+        <div class="info-list">
+          <div class="info-item">
+            <strong>Look for named ownership</strong>
+            Each system should have an accountable owner, not just a vague team label.
+          </div>
+          <div class="info-item">
+            <strong>Check whether controls are practical</strong>
+            The best templates make review and prompt restrictions obvious enough to use in daily work.
+          </div>
+          <div class="info-item">
+            <strong>Ask whether this could go live this week</strong>
+            If the answer is yes, the full kit will likely save your team material setup time.
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>What the full kit adds</h2>
+        <div class="info-list">
+          <div class="info-item">
+            <strong>Internal AI use policy</strong>
+            Rules for approved use, confidentiality boundaries, review expectations, and escalation.
+          </div>
+          <div class="info-item">
+            <strong>Human review SOP and incident log</strong>
+            A repeatable review path plus a way to record failures, misuse, and remediation.
+          </div>
+          <div class="info-item">
+            <strong>Vendor checklist and implementation guide</strong>
+            Support for basic diligence and faster rollout across the team.
+          </div>
+        </div>
+        <a class="cta" href="https://buy.stripe.com/4gM9AV3W48px3Fa0oK24003" target="_blank" rel="noopener noreferrer">Buy the starter kit - EUR 149</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

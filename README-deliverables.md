@@ -1,4 +1,4 @@
-# EU AI Act AI Governance Starter Kit — Deliverables
+# AI Governance Starter Kit for EU Teams — Deliverables
 
 > **Status:** Inspectable starter documentation pack
 > **Last Updated:** April 2026

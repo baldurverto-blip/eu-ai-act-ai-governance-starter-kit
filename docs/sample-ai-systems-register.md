@@ -1,8 +1,8 @@
 # Sample AI Systems Register
 
-> **Purpose:** Free sample from the EU AI Act AI Governance Starter Kit.
+> **Purpose:** Free sample from the AI Governance Starter Kit for EU Teams.
 > **Why this sample:** It shows the level of structure used to document ordinary business AI usage without claiming legal or compliance outcomes by itself.
-> **Not legal advice.** This is a practical documentation example for small EU teams.
+> **Note:** This is a practical documentation example for EU teams using AI in normal business workflows.
 
 ---
 
@@ -53,4 +53,4 @@ The paid toolkit expands this sample into a broader governance set:
 4. A vendor checklist for provider diligence
 5. A fuller register template ready for your own entries
 
-This sample is meant to demonstrate practicality, not to imply that a single register file alone makes a team compliant.
+This sample is meant to demonstrate practicality and structure, not to imply that a single register file alone resolves legal or compliance obligations.

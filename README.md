@@ -1,4 +1,4 @@
-# EU AI Act AI Governance Starter Kit
+# AI Governance Starter Kit for EU Teams
 
 > **Status:** Live buyer-ready product
 > **Last Updated:** 2026-04-02

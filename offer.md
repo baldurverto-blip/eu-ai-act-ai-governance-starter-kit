@@ -1,4 +1,4 @@
-# EU AI Act AI Governance Starter Kit
+# AI Governance Starter Kit for EU Teams
 
 ## One-line offer
 
