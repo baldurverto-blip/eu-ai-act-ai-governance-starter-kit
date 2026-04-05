@@ -1,6 +1,6 @@
 # AI Governance Starter Kit for EU Teams — Deliverables
 
-> **Status:** Inspectable documentation pack
+> **Status:** Review-ready documentation pack
 > **Last Updated:** April 2026
 > **Audience:** Small EU teams already using AI in ordinary business workflows
 > **Important:** This pack is an operational starter kit. It is not legal advice, a compliance guarantee, or a substitute for specialist review where the use case is high-risk, prohibited, safety-critical, or otherwise regulated more heavily.

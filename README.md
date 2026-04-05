@@ -1,7 +1,7 @@
 # AI Governance Starter Kit for EU Teams
 
-> **Status:** Live buyer-ready product
-> **Last Updated:** 2026-04-02
+> **Status:** Founder review-ready pack
+> **Last Updated:** 2026-04-03
 > **Public URL:** `https://baldurverto-blip.github.io/eu-ai-act-ai-governance-starter-kit/`
 
 ## Product Summary
@@ -36,6 +36,10 @@ Core buyer deliverables:
 Buyer trust/sample file:
 
 1. `docs/sample-ai-systems-register.md`
+
+Founder review file:
+
+1. `REVIEW.md`
 
 Commercial and ops files:
 
