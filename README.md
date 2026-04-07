@@ -2,7 +2,8 @@
 
 > **Status:** Founder review-ready pack
 > **Last Updated:** 2026-04-03
-> **Public URL:** `https://baldurverto-blip.github.io/eu-ai-act-ai-governance-starter-kit/`
+> **Public URL:** `https://inner-badge-ttaq.here.now/` (primary here.now)
+> **Backup URL:** `https://baldurverto-blip.github.io/eu-ai-act-ai-governance-starter-kit/`
 
 ## Product Summary
 

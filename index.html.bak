@@ -371,31 +371,569 @@
       color: rgba(249, 243, 234, 0.78);
     }
 
-    .
-<section class="section" style="text-align:center;padding:40px 20px;background:#fafafa;border-radius:12px;margin:30px auto;max-width:800px;">
-    <div class="container">
-        <h3 style="margin:0 0 20px 0;font-size:1.6rem;font-family:Georgia,serif;color:#222;">What You Get</h3>
-        
-        <div style="background:white;padding:25px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.08);max-width:600px;margin:0 auto;text-align:left;">
-            <img src="eu-ai-act-kit-preview.png" alt="AI Governance Starter Kit Preview" style="width:100%;height:auto;border-radius:6px;margin-bottom:20px;border:1px solid #e0e0e0;">
-            
-            <p style="margin:0 0 12px 0;font-weight:600;font-size:1rem;color:#333;">6 Core Documents Included:</p>
-            <ul style="margin:0 0 20px 0;padding-left:22px;line-height:1.9;color:#444;font-size:0.95rem;">
-                <li><strong>AI Usage Policy</strong> — Clear internal guidelines for your team's AI use</li>
-                <li><strong>AI Systems Register</strong> — Document every AI tool in use</li>
-                <li><strong>Incident Response Log</strong> — Track and learn from AI issues</li>
-                <li><strong>Internal Review SOP</strong> — How to review AI use regularly</li>
-                <li><strong>Vendor Assessment Checklist</strong> — Evaluate new AI vendors safely</li>
-                <li><strong>Implementation Guide</strong> — Get started in week one</li>
-            </ul>
-            
-            <a href="https://baldurverto-blip.github.io/eu-ai-act-ai-governance-starter-kit/docs/sample-ai-systems-register.md" style="display:inline-block;padding:10px 20px;background:#f5f5f5;border-radius:6px;color:#333;text-decoration:none;font-size:0.9rem;">
-                Preview Sample Register →
-            </a>
-        </div>
-    </div>
-</section>
+    .preview-card {
+      padding: 26px;
+      border: 1px solid rgba(23, 21, 19, 0.08);
+      background: rgba(255, 249, 241, 0.72);
+      overflow: hidden;
+    }
 
+    .preview-frame {
+      position: relative;
+      padding: 16px;
+      border-radius: 28px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(244, 233, 219, 0.92) 100%);
+      border: 1px solid rgba(23, 21, 19, 0.08);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.48);
+    }
+
+    .preview-frame-link {
+      display: block;
+      text-decoration: none;
+      transition: transform 0.22s ease;
+    }
+
+    .preview-frame-link:hover { transform: translateY(-2px); }
+
+    .preview-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      border: 1px solid rgba(23, 21, 19, 0.08);
+      box-shadow: 0 22px 44px rgba(38, 28, 17, 0.16);
+    }
+
+    .preview-meta {
+      display: grid;
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .preview-header {
+      display: grid;
+      gap: 10px;
+    }
+
+    .preview-title {
+      font-size: 1.7rem;
+      line-height: 1.02;
+      max-width: 16ch;
+    }
+
+    .preview-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: rgba(49, 71, 63, 0.1);
+      color: var(--moss);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .preview-kicker::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: currentColor;
+    }
+
+    .preview-proof-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .preview-proof-item {
+      min-height: 118px;
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.6);
+      border: 1px solid rgba(23, 21, 19, 0.08);
+      display: grid;
+      align-content: start;
+      gap: 8px;
+    }
+
+    .preview-proof-item strong {
+      display: block;
+      color: var(--ink);
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+
+    .preview-proof-item span {
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    .checkpoint,
+    .step-list,
+    .faq-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .checkpoint-item,
+    .step-item {
+      padding: 16px 18px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .checkpoint-item strong,
+    .step-item strong {
+      display: block;
+      color: inherit;
+      margin-bottom: 2px;
+    }
+
+    .section-head {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 40px;
+      max-width: 48rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+
+    .problem-card,
+    .fit-card,
+    .price-card,
+    .faq-card,
+    .lane-card,
+    .approach-card,
+    .sample-card {
+      padding: 34px;
+    }
+
+    .problem-card {
+      border: 1px solid rgba(196, 93, 47, 0.14);
+      background: linear-gradient(180deg, rgba(255, 250, 242, 0.95) 0%, rgba(248, 237, 226, 0.84) 100%);
+    }
+
+    .fit-card {
+      border: 1px solid rgba(49, 71, 63, 0.12);
+      background: linear-gradient(180deg, rgba(223, 232, 225, 0.92) 0%, rgba(242, 247, 243, 0.92) 100%);
+    }
+
+    .fit-list,
+    .lane-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .fit-list li,
+    .lane-list li {
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .fit-list li::before,
+    .lane-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--signal);
+    }
+
+    .vault {
+      padding: 34px;
+      border: 1px solid rgba(23, 21, 19, 0.08);
+      background:
+        linear-gradient(180deg, rgba(255, 252, 247, 0.98) 0%, rgba(245, 236, 225, 0.96) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vault::before {
+      content: "";
+      position: absolute;
+      inset: -80px auto auto 70%;
+      width: 280px;
+      height: 280px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(185, 146, 63, 0.17), transparent 70%);
+      pointer-events: none;
+    }
+
+    .include-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .include-list li {
+      min-height: 168px;
+      padding: 24px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid rgba(23, 21, 19, 0.08);
+    }
+
+    .file-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: rgba(23, 21, 19, 0.08);
+      color: var(--ink);
+      font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+      font-size: 0.74rem;
+      margin-bottom: 12px;
+    }
+
+    .include-list p { font-size: 0.95rem; }
+
+    .price-card {
+      color: #f9f4ed;
+      background: linear-gradient(160deg, #2e2a25 0%, #171513 100%);
+      border: 1px solid rgba(255,255,255,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .price-card::before {
+      content: "";
+      position: absolute;
+      inset: auto auto -60px -30px;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(196, 93, 47, 0.30), transparent 68%);
+      pointer-events: none;
+    }
+
+    .price-kicker {
+      color: rgba(249, 244, 237, 0.68);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.76rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: clamp(3rem, 6vw, 4.8rem);
+      line-height: 0.9;
+      color: #fff8f1;
+      margin: 6px 0 10px;
+    }
+
+    .price small {
+      display: block;
+      font-size: 0.92rem;
+      color: rgba(249, 244, 237, 0.7);
+      letter-spacing: normal;
+      margin-top: 8px;
+    }
+
+    .lane-list strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .faq-card {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.54);
+    }
+
+    .approach-card,
+    .sample-card {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.58);
+    }
+
+    .faq-card strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .value-list {
+      display: grid;
+      gap: 14px;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .value-list li {
+      padding: 16px 18px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 249, 241, 0.78);
+      border: 1px solid rgba(23, 21, 19, 0.08);
+    }
+
+    .value-list strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .sample-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+      font-weight: 800;
+      text-decoration: none;
+      color: var(--signal-deep);
+    }
+
+    .sample-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .sample-link-card {
+      flex: 1 1 220px;
+      display: grid;
+      gap: 6px;
+      padding: 18px 20px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(23, 21, 19, 0.08);
+      background: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .sample-link-card:hover {
+      transform: translateY(-1px);
+      border-color: rgba(196, 93, 47, 0.28);
+      box-shadow: 0 18px 34px rgba(38, 28, 17, 0.08);
+    }
+
+    .sample-link-card strong {
+      color: var(--ink);
+    }
+
+    .sample-link-card span {
+      color: var(--ink-soft);
+      font-size: 0.94rem;
+    }
+
+    .sample-preview {
+      border-radius: 22px;
+      border: 1px solid rgba(23, 21, 19, 0.08);
+      background: linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(250, 244, 236, 0.96) 100%);
+      overflow: hidden;
+      box-shadow: 0 24px 50px rgba(38, 28, 17, 0.12);
+    }
+
+    .sample-preview-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 18px;
+      border-bottom: 1px solid rgba(23, 21, 19, 0.08);
+      background: rgba(246, 238, 226, 0.82);
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+
+    .sample-preview-dots {
+      display: inline-flex;
+      gap: 8px;
+    }
+
+    .sample-preview-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(23, 21, 19, 0.18);
+    }
+
+    .sample-preview-body {
+      padding: 28px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .sample-table-wrap {
+      overflow-x: auto;
+    }
+
+    .sample-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .sample-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: rgba(49, 71, 63, 0.10);
+      color: var(--moss);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .sample-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+      font-size: 0.92rem;
+    }
+
+    .sample-table th,
+    .sample-table td {
+      padding: 12px 10px;
+      text-align: left;
+      border-bottom: 1px solid rgba(23, 21, 19, 0.08);
+      vertical-align: top;
+    }
+
+    .sample-table th {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-soft);
+    }
+
+    .sample-table td strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+
+    .sample-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 0 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .sample-badge-ordinary {
+      background: rgba(49, 71, 63, 0.12);
+      color: var(--moss);
+    }
+
+    .sample-badge-elevated {
+      background: rgba(196, 93, 47, 0.14);
+      color: var(--signal-deep);
+    }
+
+    .disclaimer-band {
+      padding: 28px 30px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(196, 93, 47, 0.14);
+      background: rgba(255, 246, 238, 0.82);
+    }
+
+    .checkout-band {
+      padding: 32px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(49, 71, 63, 0.14);
+      background: rgba(223, 232, 225, 0.78);
+    }
+
+    .micro-note {
+      font-size: 0.92rem;
+    }
+
+    footer {
+      padding: 28px 0 54px;
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+      border-top: 1px solid rgba(23, 21, 19, 0.08);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .grid-2,
+      .include-list,
+      .preview-proof-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1, h2 { max-width: none; }
+    }
+
+    @media (max-width: 720px) {
+      .container { width: min(100% - 28px, 1160px); }
+      .section { padding: 82px 0; }
+      .section-tight { padding: 68px 0; }
+      .hero { padding: 34px 0 64px; }
+      .topbar .container {
+        padding: 12px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .nav-links {
+        gap: 14px;
+        font-size: 0.9rem;
+      }
+      .hero-panel,
+      .vault,
+      .problem-card,
+      .fit-card,
+      .price-card,
+      .faq-card,
+      .lane-card,
+      .checkout-band,
+      .sample-card,
+      .approach-card,
+      .disclaimer-band {
+        padding: 24px;
+      }
+
+      .sample-preview-body { padding: 20px; }
+      .sample-link-card { flex-basis: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="#top">Verto <span>AI Governance Kit</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#approach">About</a>
+        <a href="#included">Included Files</a>
+        <a href="#sample">Sample</a>
+        <a href="ai-governance-faq.html">FAQ</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
